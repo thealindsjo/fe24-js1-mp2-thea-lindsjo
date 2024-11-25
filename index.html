@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+    <title>Pig Dice Game</title>
+</head>
+<body>
+    <h1>Pig - The Dice Game</h1>
+    <div>
+        <form id="gameForm">
+            <p>Spelarens namn: 
+                <input type="text" placeholder="Skriv ditt namn">
+                <button type="submit">Bekräfta</button>
+            </p>
+        </form>
+        <p id="nameDisplay">Spelarens namn: <span id="playerName"></span></p>
+         
+        <p>Total poäng: <span id="totalScore">0</span></p>
+        <p>Omgångens poäng: <span id="roundScore">0</span></p>
+        <p>Antal spelade omgångar: <span id="roundsPlayed">0</span></p>
+        <p>Tärningens nummer: <span id="diceNumber">-</span></p>
+    
+        <button type="button" id="rollDice">Kasta tärningen</button>
+        <button type="button" id="newRound">Ny omgång</button>
+        <button type="button" id="restartGame">Starta om spelet</button>
+        <h2 id="gameMessage"></h2>
+    </div>
+
+    <div>
+        <div class="dice" id="one">
+            <div></div>
+        </div>
+        <div class="dice" id="two">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="dice" id="three">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="dice" id="four">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="dice" id="five">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="dice" id="six">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>
